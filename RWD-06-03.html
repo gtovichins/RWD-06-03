@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Carta HTML</title>
+    <style>
+        body {
+            background-color: #f4f1ea;
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            padding: 50px 20px;
+            margin: 0;
+        }
+
+        .envelope {
+            background-color: #fff;
+            max-width: 600px;
+            width: 100%;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+            position: relative;
+        }
+
+        .data {
+            text-align: right;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .conteudo {
+            line-height: 1.8;
+            color: #333;
+            text-align: justify;
+        }
+
+        .assinatura {
+            margin-top: 50px;
+            font-style: italic;
+        }
+
+        
+        .envelope::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 5px;
+            background: burlywood;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="envelope">
+        <div class="data">
+            Florianópolis, 06 de março de 2026.
+        </div>
+
+        <section class="conteudo">
+            <p>Olá, Univali,</p>
+            
+            <p>Escrevo esta carta como parte da atividade prática de HTML. O objetivo aqui é demonstrar como a estruturação de tags simples pode criar uma experiência visual agradável e organizada.</p>
+            
+            <p>A tecnologia nos permite enviar mensagens instantâneas, mas o formato de uma carta ainda carrega uma elegância única, mesmo quando renderizada em um navegador.</p>
+            
+            <p>Espero que este layout atenda aos requisitos da atividade!</p>
+        </section>
+
+        <footer class="assinatura">
+            <p>Atenciosamente,<br>
+            <strong>Gustavo Costa Vichinsky</strong></p>
+        </footer>
+    </main>
+
+</body>
+</html>
